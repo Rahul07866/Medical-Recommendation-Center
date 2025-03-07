@@ -8,6 +8,21 @@
   </head>
 
   <style>
+        /* Add background image */
+        body {
+        background-image: url('{{ url_for("static", filename="background.jpg") }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh; /* Make sure the background takes the full height of the page */
+        }
+    
+        .container {
+        background-color: rgba(0, 0, 0, 0.5); /* Add a slight transparency to the container to improve text visibility */
+        color: white;
+        border-radius: 15px;
+        padding: 40px;
+        }
 
         .logo {
             width: 55px;
